@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.velotn.Ui.ProductsUiController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="774.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="70.0" prefWidth="774.0">
+               <children>
+                  <JFXButton onAction="#afficherProduits" prefWidth="150.0" styleClass="buttonDonate" stylesheets="@../css/stylesheet.css" text="Afficher tout" />
+                  <JFXButton layoutX="10.0" layoutY="10.0" onAction="#afficher_velos" prefWidth="150.0" styleClass="buttonDonate" stylesheets="@../css/stylesheet.css" text="Velos" />
+                  <JFXButton layoutX="62.0" layoutY="10.0" onAction="#afficher_accessoires" prefWidth="150.0" styleClass="buttonDonate" stylesheets="@../css/stylesheet.css" text="Accessories" />
+                  <JFXButton layoutX="114.0" layoutY="10.0" onAction="#afficher_pieces" prefWidth="150.0" styleClass="buttonDonate" stylesheets="@../css/stylesheet.css" text="Pieces" />
+                  <JFXButton layoutX="211.0" layoutY="10.0" onAction="#afficher_location" prefWidth="150.0" styleClass="buttonDonate" stylesheets="@../css/stylesheet.css" text="Location" />
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <ScrollPane fx:id="productScrollPane" layoutY="70.0" prefHeight="470.0" prefWidth="774.0">
+         <content>
+            <Pane fx:id="productPane" />
+         </content>
+      </ScrollPane>
+      <Pane fx:id="rentDetailsPane" layoutX="509.0" layoutY="70.0" prefHeight="470.0" prefWidth="265.0" style="-fx-background-color: #000000;" visible="false">
+         <children>
+            <Label fx:id="labelIdRent" visible="false" />
+            <VBox alignment="CENTER" layoutX="47.0" layoutY="93.0" spacing="20.0">
+               <children>
+                  <Label text="Date début" textFill="WHITE" />
+                  <JFXDatePicker fx:id="date_debut" />
+                  <Label text="Date fin" textFill="WHITE" />
+                  <JFXDatePicker fx:id="date_fin" />
+                  <JFXButton onAction="#Ajouter" text="Reserver" textFill="WHITE" />
+                  <JFXButton onAction="#Annuler" text="Annuler" textFill="WHITE" />
+                  <JFXButton onAction="#afficher_reservations" text="Afficher Reservations" textFill="WHITE" />
+               </children>
+            </VBox>
+         </children></Pane>
+   </children>
+</Pane>

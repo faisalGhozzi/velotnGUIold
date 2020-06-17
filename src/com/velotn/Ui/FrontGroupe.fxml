@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.velotn.Ui.FrontGroupeController">
+    <children>
+        <JFXListView fx:id="ListView_Produits" layoutX="160.0" layoutY="100.0" prefHeight="300.0" prefWidth="400.0" />
+        <HBox alignment="CENTER_LEFT" layoutX="162.0" prefHeight="57.0" prefWidth="300.0">
+            <children>
+                <TextField fx:id="recherche" onKeyReleased="#search" promptText="recherche" />
+                <FontAwesomeIconView glyphName="SEARCH" size="14.0" />
+            </children></HBox>
+        <ImageView fitHeight="47.0" fitWidth="168.0" layoutX="43.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../content/logo.png" />
+            </image>
+        </ImageView>
+        <HBox alignment="BOTTOM_LEFT" layoutX="400.0" layoutY="-3.0" prefHeight="57.0" prefWidth="224.0" />
+    </children>
+
+</AnchorPane>

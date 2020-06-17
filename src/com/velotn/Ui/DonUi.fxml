@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="774.0" styleClass="paneBgImage" stylesheets="@../css/stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.velotn.Ui.DonUiController">
+   <children>
+      <Pane layoutX="187.0" layoutY="120.0" prefHeight="300.0" prefWidth="400.0" styleClass="roundedCorners" stylesheets="@../css/stylesheet.css">
+         <children>
+            <VBox alignment="CENTER" prefHeight="300.0" prefWidth="400.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="39.0" prefWidth="400.0">
+                     <children>
+                        <JFXTextField fx:id="donTextField" focusColor="#405aa800" styleClass="textAreaDon" stylesheets="@../css/stylesheet.css" unFocusColor="#4d4d4d00">
+                           <font>
+                              <Font name="Open Sans Bold" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXComboBox fx:id="donComboBox" focusColor="#405aa800" prefHeight="40.0" styleClass="comboBoxDon" stylesheets="@../css/stylesheet.css" unFocusColor="#4d4d4d00" />
+                     </children>
+                  </HBox>
+                  <Label alignment="CENTER" text="Veuillez choisir une méthode de paiment " textFill="#000000e5">
+                     <font>
+                        <Font name="Quicksand Medium" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <JFXButton onAction="#addDonation" styleClass="buttonDonate" text="Carte" />
+                        <JFXButton layoutX="10.0" layoutY="10.0" onAction="#addDonation" styleClass="buttonDonate" text="PayPal" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</Pane>

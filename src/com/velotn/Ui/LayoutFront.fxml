@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" stylesheets="@../styles/layoutfront.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.velotn.Ui.LayoutFrontController">
+   <children>
+      <AnchorPane fx:id="holderPane" layoutX="80.0" layoutY="70.0" prefHeight="730.0" prefWidth="1013.0" style="-fx-background-color: #edf2f6;;" />
+      <fx:include fx:id="menubar" source="MenuBar.fxml" />
+      <VBox prefHeight="800.0" prefWidth="80.0" style="-fx-background-color: #fff;" stylesheets="@../CSS/layoutfront.css">
+         <children>
+            <VBox prefHeight="729.0" prefWidth="80.0">
+               <children>
+                  <VBox prefHeight="742.0" prefWidth="80.0">
+
+                     <children>
+                          
+                        <Pane prefHeight="75.0" prefWidth="80.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fitHeight="62.0" fitWidth="80.0" layoutX="-2.0" layoutY="6.0">
+                                 <image>
+                                    <Image url="@../Images/velo2.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane onMouseClicked="#home" prefHeight="62.0" prefWidth="80.0" styleClass="menu" stylesheets="@../styles/layoutfront.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fx:id="home" fitHeight="34.0" fitWidth="37.0" layoutX="18.0" layoutY="14.0" onMouseClicked="#home">
+                                 <image>
+                                    <Image url="@../Images/icons8-home-100.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane onMouseClicked="#espaceAction" prefHeight="62.0" prefWidth="80.0" styleClass="menu" stylesheets="@../styles/layoutfront.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fx:id="espace" fitHeight="34.0" fitWidth="37.0" layoutX="18.0" layoutY="14.0">
+                                 <image>
+                                    <Image url="@../Images/icons8-building-100.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane onMouseClicked="#eventAction" prefHeight="62.0" prefWidth="80.0" styleClass="menu" stylesheets="@../styles/layoutfront.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fx:id="evenement" fitHeight="34.0" fitWidth="37.0" layoutX="18.0" layoutY="14.0">
+                                 <image>
+                                    <Image url="@../Images/icons8-calendar-100.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane onMouseClicked="#searchAction" prefHeight="62.0" prefWidth="80.0" styleClass="menu" stylesheets="@../styles/layoutfront.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fx:id="profile" fitHeight="34.0" fitWidth="37.0" layoutX="18.0" layoutY="14.0">
+                                 <image>
+                                    <Image url="@../Images/icons8-forum-100.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane onMouseClicked="#matchingAction" prefHeight="62.0" prefWidth="80.0" styleClass="menu" stylesheets="@../styles/layoutfront.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fx:id="interaction" fitHeight="48.0" fitWidth="70.0" layoutX="1.0" layoutY="3.0">
+                                 <image>
+                                    <Image url="@../Images/iconfinder_bit-13_280396.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+
+                        <Pane onMouseClicked="#forumAction" prefHeight="62.0" prefWidth="80.0" styleClass="menu" stylesheets="@../styles/layoutfront.css">
+
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fitHeight="48.0" fitWidth="63.0" layoutX="8.0" layoutY="-4.0">
+                                 <image>
+                                    <Image url="@../Images/iconfinder_10.check-correct_4201270.png" />
+                                 </image></ImageView>
+                           </children>
+                        </Pane>
+                        <Pane onMouseClicked="#Logout" prefHeight="62.0" prefWidth="80.0" styleClass="menu" stylesheets="@../styles/layoutfront.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fitHeight="48.0" fitWidth="63.0" layoutX="10.0" layoutY="10.0">
+                                 <image>
+                                    <Image url="@../Images/logout.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+     
+   </children>
+</AnchorPane>

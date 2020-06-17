@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.velotn.Ui.statController">
+    <children>
+        <BarChart fx:id="barChart" layoutX="161.0" layoutY="79.0" prefHeight="388.0" prefWidth="513.0">
+            <xAxis>
+                <CategoryAxis side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" />
+            </yAxis>
+        </BarChart>
+        <JFXButton fx:id="statReclamationBtn" layoutX="343.0" layoutY="467.0" onAction="#AfficherStatReclamation" prefWidth="227.0" ripplerFill="BLACK" styleClass="buttonAjouterPanier" stylesheets="@../css/stylesheet.css" text="Afficher statistiques ">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </JFXButton>
+        <Text fill="#f57824" layoutX="204.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Statistiques de nombre de membre par groupe">
+            <font>
+                <Font name="Calibri Light Italic" size="23.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

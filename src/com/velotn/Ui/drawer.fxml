@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="box" cache="true" cacheHint="SPEED" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="250.0" style="-fx-background-color: #494c62;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DrawerController">
+   
+       <children>
+      <ImageView fx:id="imgUser" fitHeight="146.0" fitWidth="252.0" focusTraversable="true" layoutX="51.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../content/usericon.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelUser" alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="173.0" prefHeight="27.0" prefWidth="230.0" textFill="#e4dbdb">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <VBox layoutX="-1.0" layoutY="231.0" prefHeight="370.0" prefWidth="250.0" spacing="3.0">
+         <children>
+            <JFXButton fx:id="notification" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#notification" prefHeight="50.0" prefWidth="259.0" ripplerFill="#d6b2fc" style="-fx-background-color: #494c62;" text="Button" textFill="#9d9595">
+               <font>
+                  <Font name="Roboto Bold" size="18.0" />
+               </font>
+                <graphic>
+                  <HBox alignment="CENTER" prefHeight="38.0" prefWidth="167.0">
+                     <children>
+                        <FontAwesomeIconView fill="#e4dbdb" glyphName="ANGELLIST" size="30" wrappingWidth="39.0" />
+                        <Label prefHeight="38.0" prefWidth="138.0" text="Statistiques" textFill="WHITE">
+                           <font>
+                              <Font name="Roboto Bold" size="18.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Label>
+                     </children>
+                  </HBox>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="listeDesAnnonce" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#listeDesAnnonce" prefHeight="50.0" prefWidth="259.0" ripplerFill="#d6b2fc" style="-fx-background-color: #494c62;" textFill="#e4dbdb">
+               <font>
+                  <Font name="Roboto Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <HBox alignment="CENTER" prefHeight="38.0" prefWidth="167.0">
+                     <children>
+                        <FontAwesomeIconView fill="#e4dbdb" glyphName="LIST" size="30" wrappingWidth="39.0" />
+                        <Label prefHeight="38.0" prefWidth="138.0" text="Liste des Groupes" textFill="WHITE">
+                           <font>
+                              <Font name="Roboto Bold" size="18.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Label>
+                     </children>
+                  </HBox>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="AjoutAnnonce" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#AjoutAnnonce" prefHeight="50.0" prefWidth="259.0" ripplerFill="#d6b2fc" style="-fx-background-color: #494c62;" textFill="#e4dbdb">
+               <font>
+                  <Font name="Roboto Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <HBox alignment="CENTER" prefHeight="38.0" prefWidth="167.0">
+                     <children>
+                        <FontAwesomeIconView fill="#e4dbdb" glyphName="STACK_OVERFLOW" size="30" wrappingWidth="39.0" />
+                        <Label prefHeight="38.0" prefWidth="132.0" text="Ajouter un Groupe" textFill="WHITE">
+                           <font>
+                              <Font name="Roboto Bold" size="18.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Label>
+                     </children>
+                  </HBox>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+ 
+</AnchorPane>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="800.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.velotn.Ui.AjouterProduitController">
+   <children>
+      <TabPane layoutX="13.0" layoutY="6.0" prefHeight="393.0" prefWidth="733.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Liste des Produits">
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <center>
+                        <TableView fx:id="listeProduits" focusTraversable="false" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+                           <columns>
+                              <TableColumn fx:id="Nom_Produit" prefWidth="113.0" resizable="false" sortable="false" text="Nom Produit" />
+                              <TableColumn fx:id="Description" prefWidth="143.0" resizable="false" sortable="false" text="Description" />
+                              <TableColumn fx:id="Prix" prefWidth="106.0" resizable="false" text="Prix" />
+                              <TableColumn fx:id="Marque" prefWidth="162.0" resizable="false" sortable="false" text="Marque" />
+                              <TableColumn fx:id="Type" prefWidth="91.0" resizable="false" sortable="false" text="Type" />
+                              <TableColumn fx:id="Quantite" prefWidth="111.0" resizable="false" text="Quantite" />
+                           </columns>
+                        </TableView>
+                     </center>
+                  </BorderPane>
+               </content>
+            </Tab>
+            <Tab text="Velos">
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <center>
+                        <TableView fx:id="listeVelos" focusTraversable="false" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+                           <columns>
+                              <TableColumn fx:id="nomV" onEditCommit="#Changer_NomProduitVelo" prefWidth="127.0" resizable="false" text="Nom Produit" />
+                              <TableColumn fx:id="DescriptionV" onEditCommit="#Changer_DescriptionVelo" prefWidth="88.0" resizable="false" text="Description" />
+                              <TableColumn fx:id="PrixV" onEditCommit="#Changer_PrixVelo" prefWidth="63.0" resizable="false" text="Prix" />
+                              <TableColumn fx:id="MarqueV" prefWidth="89.0" resizable="false" text="Marque" />
+                              <TableColumn fx:id="TypeV" prefWidth="93.0" resizable="false" text="Type" />
+                              <TableColumn fx:id="QuantiteV" onEditCommit="#Changer_QuantiteVelo" prefWidth="113.0" resizable="false" text="Quantite" />
+                           </columns>
+                        </TableView>
+                     </center>
+                  </BorderPane>
+               </content>
+            </Tab>
+            <Tab text="Pieces de rechanges">
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <center>
+                        <TableView fx:id="listePieces" focusTraversable="false" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+                           <columns>
+                              <TableColumn fx:id="nomP" onEditCommit="#Changer_NomProduitPiece" prefWidth="106.0" resizable="false" text="Nom Produit" />
+                              <TableColumn fx:id="descriptionP" minWidth="7.0" onEditCommit="#Changer_DescriptionPiece" prefWidth="117.0" resizable="false" text="Description" />
+                              <TableColumn fx:id="prixP" onEditCommit="#Changer_PrixPiece" prefWidth="76.0" resizable="false" text="Prix" />
+                              <TableColumn fx:id="marqueP" minWidth="4.0" prefWidth="99.0" resizable="false" text="Marque" />
+                              <TableColumn fx:id="typeP" prefWidth="103.0" resizable="false" text="Type" />
+                              <TableColumn fx:id="quantiteP" minWidth="8.0" onEditCommit="#Changer_QuantitePiece" prefWidth="144.0" resizable="false" text="Quantite" />
+                           </columns>
+                        </TableView>
+                     </center>
+                  </BorderPane>
+               </content>
+            </Tab>
+            <Tab text="Accessoires">
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <center>
+                        <TableView fx:id="listeAccessoires" focusTraversable="false" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+                           <columns>
+                              <TableColumn fx:id="nomA" onEditCommit="#Changer_NomProduitAcc" prefWidth="109.0" resizable="false" text="Nom Produit" />
+                              <TableColumn fx:id="descriptionA" onEditCommit="#Changer_DescriptionAcc" prefWidth="72.0" resizable="false" text="Description" />
+                              <TableColumn fx:id="prixA" onEditCommit="#Changer_PrixAcc" prefWidth="104.0" resizable="false" text="Prix" />
+                              <TableColumn fx:id="marqueA" prefWidth="78.0" resizable="false" text="Marque" />
+                              <TableColumn fx:id="typeA" prefWidth="83.0" resizable="false" text="Type" />
+                              <TableColumn fx:id="quantiteA" onEditCommit="#Changer_QuantiteAcc" prefWidth="101.0" resizable="false" text="Quantite" />
+                           </columns>
+                        </TableView>
+                     </center>
+                  </BorderPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Button layoutX="80.0" layoutY="478.0" mnemonicParsing="false" onAction="#AjouterVelo" text="Ajouter Velo" />
+      <Button layoutX="337.0" layoutY="478.0" mnemonicParsing="false" onAction="#AjouterAccessoire" text="Ajouter Accessoire" />
+      <Button layoutX="170.0" layoutY="478.0" mnemonicParsing="false" onAction="#AjouterPiece" text="Ajouter Piece de Rechange" />
+      <TextField fx:id="TF_nomProd" layoutX="13.0" layoutY="414.0" promptText="Nom Produit" />
+      <TextField fx:id="TF_description" layoutX="174.0" layoutY="414.0" promptText="Description" />
+      <TextField fx:id="TF_prix" layoutX="330.0" layoutY="414.0" promptText="Prix" />
+      <TextField fx:id="TF_quantite" layoutX="497.0" layoutY="414.0" prefWidth="149.0" promptText="Quantité" />
+      <TextField fx:id="TF_marque" layoutX="13.0" layoutY="444.0" promptText="Marque Produit" />
+      <TextField fx:id="TF_type" layoutX="174.0" layoutY="444.0" promptText="Type" />
+      <Button layoutX="463.0" layoutY="478.0" mnemonicParsing="false" onAction="#SupprimerVelo" text="Supprimer Velo" />
+      <Button layoutX="572.0" layoutY="478.0" mnemonicParsing="false" onAction="#SupprimerPiece" text="Supprimer Piece de Rechange" />
+      <Button layoutX="121.0" layoutY="503.0" mnemonicParsing="false" onAction="#SupprimerAccessoire" text="Supprimer Accessoire" />
+      <TextField fx:id="recherche" layoutX="330.0" layoutY="444.0" onInputMethodTextChanged="#RechercheAV" promptText="Recherche" />
+      <Button fx:id="ImageProduit" layoutX="386.0" layoutY="503.0" mnemonicParsing="false" onAction="#selectImage" prefHeight="25.0" prefWidth="131.0" text="Image Produit" />
+      <TextField fx:id="NomImage" editable="false" layoutX="497.0" layoutY="444.0" />
+   </children>
+</AnchorPane>

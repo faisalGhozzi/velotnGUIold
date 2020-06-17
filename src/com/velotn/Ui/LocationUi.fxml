@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane fx:id="locationPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="759.0" styleClass="contentPane" stylesheets="@../css/stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.velotn.Ui.LocationUiController">
+   <children>
+      <Label fx:id="idLabelRent" />
+      <VBox alignment="CENTER" layoutX="104.0" layoutY="121.0">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label text="Date Début" />
+                  <JFXDatePicker fx:id="date_debut" />
+               </children></HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Date Fin" />
+                  <JFXDatePicker fx:id="date_fin" />
+               </children>
+            </HBox>
+            <JFXButton onAction="#Ajouter" styleClass="buttonDonate" text="Reserver" />
+            <JFXButton styleClass="buttonDonate" stylesheets="@../css/stylesheet.css" text="Annuler" />
+         </children>
+      </VBox>
+      <VBox layoutX="488.0" layoutY="135.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label fx:id="labelTypeProduit" text="Label" />
+            <Label fx:id="labelDescription" text="Label" />
+            <Label fx:id="labelPrix" text="Label" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+   </children>
+</Pane>

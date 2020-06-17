@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.web.WebView?>
+
+<Pane fx:id="paneLocation" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.velotn.Ui.AffichageLocationUiController">
+   <children>
+      <TableView fx:id="tablocation" layoutX="206.0" layoutY="14.0" prefHeight="346.0" prefWidth="539.0">
+        <columns>
+            <TableColumn fx:id="ididVelo" prefWidth="75.0" text="idVelo" visible="false" />
+            <TableColumn fx:id="idvelo" prefWidth="103.0" text="Velo" />
+          <TableColumn fx:id="dd" onEditCommit="#change_dd" prefWidth="122.0" text="Date Début" />
+          <TableColumn fx:id="df" onEditCommit="#change_df" prefWidth="92.0" text="Date Fin" />
+            <TableColumn fx:id="prixtotal" prefWidth="120.0" text="Prix Total" />
+            <TableColumn fx:id="iduser" prefWidth="101.0" text="Locataire" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="suppBtn" layoutX="93.0" layoutY="389.0" onAction="#buttonSupprimer" styleClass="buttonAjouterPanier" stylesheets="@../css/stylesheet.css" text="Supprimer" />
+      <TextField fx:id="recherche" layoutX="19.0" layoutY="90.0" promptText="Rechercher" />
+      <JFXButton fx:id="ImprimerBtn" layoutX="255.0" layoutY="389.0" onAction="#telecharger" styleClass="buttonDonate" stylesheets="@../css/stylesheet.css" text="Imprimer" />
+      <JFXButton fx:id="Localisationbtn" layoutX="380.0" layoutY="389.0" onAction="#open_gps" styleClass="buttonDonate" stylesheets="@../css/stylesheet.css" text="Localisation" />
+      <WebView fx:id="webViewGps" minHeight="500.0" minWidth="500.0" prefHeight="540.0" prefWidth="759.0" />
+   </children>
+</Pane>

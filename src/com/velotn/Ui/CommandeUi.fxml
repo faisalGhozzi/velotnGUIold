@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.velotn.Ui.CommandeUiController">
+   <children>
+      <TableView fx:id="tableCommande" layoutX="395.0" layoutY="14.0" prefHeight="247.0" prefWidth="365.0">
+        <columns>
+          <TableColumn fx:id="dateCommande" prefWidth="183.0" text="Date" />
+          <TableColumn fx:id="prixCommande" prefWidth="181.0" text="Prix" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableProduits" layoutX="395.0" layoutY="279.0" prefHeight="247.0" prefWidth="365.0">
+        <columns>
+          <TableColumn fx:id="produitProduit" prefWidth="105.0" text="Produit" />
+          <TableColumn fx:id="puProduit" prefWidth="84.0" text="Prix Unitaire" />
+            <TableColumn fx:id="qteProduit" prefWidth="81.0" text="Quantité" />
+            <TableColumn fx:id="ptProduit" prefWidth="94.0" text="Prix Total" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

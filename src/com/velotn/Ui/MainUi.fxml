@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.velotn.Ui.MainUiController">
+   <children>
+      <ScrollPane prefWidth="250.0">
+         <content>
+            <VBox alignment="CENTER" prefHeight="644.0" prefWidth="248.0" spacing="10.0" styleClass="sidepannel" stylesheets="@../css/stylesheet.css">
+               <children>
+                  <JFXButton fx:id="connect" focusTraversable="false" maxWidth="1.7976931348623157E308" onAction="#open_connexion" ripplerFill="WHITE" styleClass="buttonConnect" text="Connecter " textFill="WHITE">
+                     <font>
+                        <Font name="Open Sans" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="disconnect" focusTraversable="false" layoutX="10.0" layoutY="95.0" maxWidth="1.7976931348623157E308" onAction="#close_connexion" ripplerFill="WHITE" styleClass="buttonConnect" text="Deconnecter" textFill="WHITE">
+                     <font>
+                        <Font name="Open Sans" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="don" focusTraversable="false" layoutX="10.0" layoutY="288.0" maxWidth="1.7976931348623157E308" onAction="#open_don" ripplerFill="WHITE" text="Supportez WeCode" textFill="WHITE">
+                     <font>
+                        <Font name="Open Sans" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="don1" focusTraversable="false" layoutX="10.0" layoutY="260.0" maxWidth="1.7976931348623157E308" onAction="#open_list_don" ripplerFill="WHITE" text="Afficher dons" textFill="WHITE">
+                     <font>
+                        <Font name="Open Sans" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="commande" focusTraversable="false" layoutX="10.0" layoutY="315.0" maxWidth="1.7976931348623157E308" onAction="#open_commandes" ripplerFill="WHITE" text="Afficher Commande" textFill="WHITE">
+                     <font>
+                        <Font name="Open Sans" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="produits" focusTraversable="false" layoutX="10.0" layoutY="343.0" maxWidth="1.7976931348623157E308" onAction="#open_products" ripplerFill="WHITE" text="Produits" textFill="WHITE">
+                     <font>
+                        <Font name="Open Sans" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="promotion" focusTraversable="false" layoutX="10.0" layoutY="398.0" maxWidth="1.7976931348623157E308" onAction="#open_promotion" ripplerFill="WHITE" text="Promo" textFill="WHITE">
+                     <font>
+                        <Font name="Open Sans" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="Evenements" focusTraversable="false" layoutX="10.0" layoutY="425.0" maxWidth="1.7976931348623157E308" onAction="#open_events" ripplerFill="WHITE" text="Evenements" textFill="WHITE">
+                     <font>
+                        <Font name="Open Sans" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="reclamation" focusTraversable="false" layoutX="10.0" layoutY="453.0" maxWidth="1.7976931348623157E308" onAction="#open_reclamations" ripplerFill="WHITE" text="Reclamation" textFill="WHITE">
+                     <font>
+                        <Font name="Open Sans" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="profil" focusTraversable="false" layoutX="10.0" layoutY="255.0" maxWidth="1.7976931348623157E308" onAction="#open_profil" ripplerFill="WHITE" text="Profil" textFill="WHITE">
+                     <font>
+                        <Font name="Open Sans" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="group" focusTraversable="false" layoutX="10.0" layoutY="557.0" maxWidth="1.7976931348623157E308" onAction="#open_group" ripplerFill="WHITE" text="Groupe" textFill="WHITE">
+                     <font>
+                        <Font name="Open Sans" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="ajouterGroupe" focusTraversable="false" layoutX="10.0" layoutY="585.0" maxWidth="1.7976931348623157E308" onAction="#add_group" ripplerFill="WHITE" text="Ajouter Groupe" textFill="WHITE">
+                     <font>
+                        <Font name="Open Sans" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="ajouterGroupe1" focusTraversable="false" layoutX="10.0" layoutY="615.0" maxWidth="1.7976931348623157E308" onAction="#add_product" ripplerFill="WHITE" text="Ajouter Produit" textFill="WHITE">
+                     <font>
+                        <Font name="Open Sans" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="ajouterGroupe11" focusTraversable="false" layoutX="10.0" layoutY="670.0" maxWidth="1.7976931348623157E308" onAction="#show_stat" ripplerFill="WHITE" text="Afficher Statistiques" textFill="WHITE">
+                     <font>
+                        <Font name="Open Sans" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <VBox fx:id="contentArea" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="contentPane" stylesheets="@../css/stylesheet.css" HBox.hgrow="ALWAYS">
+         <children>
+            <Pane prefHeight="60.0" prefWidth="774.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="720.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close_app" prefHeight="35.0" prefWidth="35.0">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/cancel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Label>
+                  <Label alignment="CENTER" layoutX="680.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimize_app" prefHeight="35.0" prefWidth="35.0">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/minimize.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Label>
+                  <Label fx:id="panierImg" alignment="CENTER" layoutX="14.0" layoutY="14.0" onMouseClicked="#open_cart" prefHeight="35.0" prefWidth="35.0">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/shoppingbag.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="displayArea" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" />
+         </children>
+      </VBox>
+   </children>
+</HBox>
